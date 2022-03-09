@@ -2,8 +2,9 @@ from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///default.db'
+app.config['SECRET_KEY'] = '5b3cd5b80eb8b217c20fb37074ff4a33'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///default.db'
 db = SQLAlchemy(app)
 
 
