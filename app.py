@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -17,7 +17,7 @@ app = Flask(__name__)
 #         return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 #
 #     def __repr__(self):
-#         return '<Movie %r>' % self.title
+#         return '<Movie %r>' % self.title1
 
 
 @app.route('/')
